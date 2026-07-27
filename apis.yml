@@ -1,22 +1,104 @@
 aid: fxlabs
-name: Fxlabs
-description: Fxlabs is a company surfaced as a portfolio company of canaan-partners and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+name: APIsec
+description: >-
+  APIsec (listed as "Fxlabs" in Canaan Partners' portfolio directory, which
+  resolves to apisec.ai) is an AI-powered API and application security platform
+  that delivers continuous, automated security testing across the full API
+  lifecycle. Rather than only flagging potential issues, APIsec combines threat
+  modeling, attack-surface mapping, and AI-driven exploit validation to prove
+  which vulnerabilities are actually exploitable at runtime — producing
+  replayable evidence and remediation guidance. Its products span the APIsec
+  Platform (continuous scanning and OWASP API Top 10 coverage), apisec Surface
+  (open-source mapping of APIs, endpoints, and AI connections), and a large
+  practitioner community through APIsec University (150,000+ practitioners) and
+  Discord (15,000+ members). The company also publishes open-source security
+  tooling and Agent Skills that embed OWASP API Security Top 10 intelligence
+  directly into AI coding agents such as Cursor, Claude Code, and Copilot.
 url: https://raw.githubusercontent.com/api-evangelist/fxlabs/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://raw.githubusercontent.com/apisec-inc/apisec-skills/main/logo.png
 x-type: company
 x-source: vc-portfolio
+x-aka:
+- apisec
+x-legal-name: APIsec
+x-website: https://apisec.ai
 x-backed-by:
 - canaan-partners
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-canaan-stage: seed
+x-canaan-partner: Maha Ibrahim
+x-tier: enriched
+x-tier-reason: identity-confirmed-apisec
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- API Security
+- Application Security
+- AppSec
+- DevSecOps
+- Vulnerability Testing
+- OWASP
+- Cybersecurity
+- Artificial Intelligence
+- Agent Skills
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DomainSecurity
+  url: security/fxlabs-domain-security.yml
+- type: Website
+  url: https://apisec.ai
+- type: DeveloperPortal
+  url: https://developer.apisec.ai
+- type: Documentation
+  url: https://docs.apisec.ai
+- type: APIReference
+  url: https://apisec-inc.github.io/documentation/
+- type: Platform
+  url: https://apisec.ai/platform
+- type: Pricing
+  url: https://apisec.ai/pricing
+- type: Blog
+  url: https://apisec.ai/blog
+- type: SignUp
+  url: https://apisec.ai/sign-up
+- type: Login
+  url: https://cloud.apisecapps.com
+- type: Support
+  url: https://apisec.ai/support
+- type: PrivacyPolicy
+  url: https://apisec.ai/privacy
+- type: GitHubOrganization
+  url: https://github.com/apisec-inc
+- type: LearningHub
+  url: https://apisecuniversity.com
+- type: Community
+  url: https://discord.gg/EQcRw73NF2
+- type: Research
+  url: https://labs.apisec.ai
+- type: AgentSkill
+  name: APIsec Agent Skills (OWASP API Top 10 for AI coding agents)
+  url: skills/_index.yml
+- type: LLMsTxt
+  url: llms/fxlabs-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

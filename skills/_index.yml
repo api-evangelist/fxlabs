@@ -1,0 +1,48 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/apisec-inc/apisec-skills
+note: >-
+  Provider-published Agent Skills, saved verbatim from the official APIsec
+  (aka Fxlabs, Canaan Partners portfolio) open-source "apisec-skills" repo —
+  API security skills and rules for Cursor, Claude Code, Copilot, and other AI
+  coding agents. OWASP API Security Top 10 2023 coverage. Distributed via the
+  Cursor Marketplace (plugin name "apisec"). Content is unmodified from source;
+  provenance lives here rather than in each file's native SKILL.md frontmatter.
+homepage: https://apisec.ai
+license: MIT
+skills:
+  - file: fxlabs-bola-detector.md
+    name: bola-detector
+    owasp: API1:2023
+    description: Detects Broken Object Level Authorization (BOLA / IDOR) in endpoints that access records by user-supplied ID.
+  - file: fxlabs-auth-rbac-scaffold.md
+    name: auth-rbac-scaffold
+    owasp: API2:2023 / API5:2023
+    description: Generates secure authentication, JWT, middleware, and role-based access control patterns; refuses insecure ones.
+  - file: fxlabs-injection-checker.md
+    name: injection-checker
+    owasp: API8:2023
+    description: Flags SQL/NoSQL/command/path/SSTI/XXE/LDAP/GraphQL injection when user input reaches a query, command, or template.
+  - file: fxlabs-security-test-generator.md
+    name: security-test-generator
+    owasp: multiple
+    description: Generates adversarial security test cases (auth bypass, privilege escalation, injection, mass assignment, rate limiting).
+  - file: fxlabs-api-security-review.md
+    name: api-security-review
+    owasp: API Top 10 2023 (holistic)
+    description: Comprehensive category-by-category OWASP API Security Top 10 2023 review of an endpoint, controller, or route file.
+  - file: fxlabs-openapi-hardener.md
+    name: openapi-hardener
+    owasp: API3:2023
+    description: Tightens loose OpenAPI/JSON Schema/Zod/Joi/Pydantic definitions that create attack surface (mass assignment, data exposure).
+rules:
+  - name: auth-required
+    enforces: Every data-touching route must have authentication middleware.
+  - name: ownership-check
+    enforces: All queries scoped to the authenticated user's ID.
+  - name: input-validation
+    enforces: User input validated before reaching database or commands.
+  - name: error-sanitization
+    enforces: No stack traces, file paths, or query details in error responses.
+  - name: admin-rbac
+    enforces: Admin and elevated operations require explicit role middleware.

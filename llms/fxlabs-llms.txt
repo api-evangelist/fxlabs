@@ -1,0 +1,31 @@
+# APIsec (Fxlabs)
+
+> APIsec is an AI-powered API and application security platform delivering continuous, automated security testing with AI-driven exploit validation, threat modeling, and attack-surface mapping across the OWASP API Security Top 10. Listed as "Fxlabs" in Canaan Partners' portfolio (seed), the company resolves to apisec.ai. Added to the API Evangelist network for enrichment.
+
+## Product
+- [APIsec Platform](https://apisec.ai/platform): Continuous API security scanning and OWASP API Top 10 coverage
+- [apisec Surface (OSS)](https://apisec.ai/surface): Open-source mapping of APIs, endpoints, and AI connections
+- [Pricing](https://apisec.ai/pricing)
+
+## Docs
+- [Documentation](https://docs.apisec.ai)
+- [Developer Portal](https://developer.apisec.ai)
+- [Product docs (GitHub Pages)](https://apisec-inc.github.io/documentation/)
+- [APIsec University](https://apisecuniversity.com)
+- [Labs research](https://labs.apisec.ai)
+
+## Agent Skills
+- [APIsec Agent Skills (OWASP API Top 10 for AI coding agents)](https://github.com/apisec-inc/apisec-skills): Security skills + rules for Cursor, Claude Code, Copilot, Gemini, Replit. Local mirror: skills/_index.yml
+
+## Open Source
+- [GitHub Organization](https://github.com/apisec-inc)
+- [AI-Surface](https://github.com/apisec-inc/AI-Surface): Find and govern AI attack surfaces at PR time
+- [mcp-audit](https://github.com/apisec-inc/mcp-audit): Scan MCP configs for exposed secrets, shadow APIs, and AI models
+
+## Community & Support
+- [Support](https://apisec.ai/support)
+- [Discord community](https://discord.gg/EQcRw73NF2)
+- [Blog](https://apisec.ai/blog)
+
+## Legal
+- [Privacy Policy](https://apisec.ai/privacy)
